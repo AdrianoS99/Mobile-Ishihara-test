@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/img7.png" type="image/x-icon">
+    <title>ColourEyes</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="Page-Tittle">
+            <a href="./index.html" class="Page-link">ColourEyes</a>
+        </h1>
+    </nav>
+    <h1 class="page-text">Teste de Ishihara</h1>
+<div class="quiz-container" id="quiz-container">
+    <img id="img-teste" src="../Img/Ishihara_num74.png" alt="Teste 1"/>
+    <br>
+    <label for="answer">Qual número você vê?</label>
+    <input type="text" id="answer" placeholder="Digite o número">
+    <button id="bt1" style="width: 170px;" onclick="checkAnswer()">Verificar Resposta</button>
+    <div class="result" id="result-container"></div>
+</div>
+
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()"></span>
+        <h2 id="popup-title">Resultado:</h2>
+        <p id="popup-text"></p>
+    </div>
+</div>
+<div class="table-container">
+    <h2 class="table-tittle">Sobre o teste</h2>
+    <h3 class="table-subtittle">Proficiência</h3>
+    <table class="table">
+        <tr>
+            <td class="table-item">80% ou mais de acerto</td>
+            <td class="table-item item2">Não daltônico</td>
+        </tr>
+    </table>
+    <h3 class="table-subtittle">Erros</h3>
+    <table class="table table-last">
+        <tr>
+            <td class="table-item">8, 3, 5 e 74</td>
+            <td class="table-item item2">Indica daltonismo vermelho/verde</td>
+        </tr>
+        <tr>
+            <td class="table-item">Menos que 80% de acerto</td>
+            <td class="table-item item2">Indica tipos mais comuns de discromatopsia.</td>
+        </tr>
+        <tr>
+            <td class="table-item">Menos que 30% de acerto</td>
+            <td class="table-item item2">Indica daltonismo total, ou Acromatopsia.</td>
+        </tr>
+    </table>
+    
+</div>
+    <script src="code.js"></script>
+</body>
+</html>
